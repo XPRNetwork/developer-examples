@@ -1,0 +1,80 @@
+{
+  "version": "eosio::abi/1.2",
+  "structs": [
+    {
+      "name": "GreetTable",
+      "base": "",
+      "fields": [
+        {
+          "name": "key",
+          "type": "uint64"
+        },
+        {
+          "name": "owner",
+          "type": "name"
+        },
+        {
+          "name": "message",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "TicketsTable",
+      "base": "",
+      "fields": [
+        {
+          "name": "owner",
+          "type": "name"
+        },
+        {
+          "name": "count",
+          "type": "uint32"
+        }
+      ]
+    },
+    {
+      "name": "greet",
+      "base": "",
+      "fields": [
+        {
+          "name": "greeter",
+          "type": "name"
+        },
+        {
+          "name": "message",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "types": [],
+  "actions": [
+    {
+      "name": "greet",
+      "type": "greet",
+      "ricardian_contract": ""
+    }
+  ],
+  "tables": [
+    {
+      "name": "greets",
+      "type": "GreetTable",
+      "index_type": "i64",
+      "key_names": [],
+      "key_types": []
+    },
+    {
+      "name": "tickets",
+      "type": "TicketsTable",
+      "index_type": "i64",
+      "key_names": [],
+      "key_types": []
+    }
+  ],
+  "ricardian_clauses": [],
+  "variants": [],
+  "action_results": [],
+  "abi_extensions": [],
+  "error_messages": []
+}
